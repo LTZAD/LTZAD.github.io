@@ -1,0 +1,236 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>博客搭建过程 | 乐天斋的博客</title><meta name="author" content="乐天斋"><meta name="copyright" content="乐天斋"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="持续更新Hexo博客搭建全过程">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建过程">
+<meta property="og:url" content="https://www.ltzblog.top/2024/07/07/process/index.html">
+<meta property="og:site_name" content="乐天斋的博客">
+<meta property="og:description" content="持续更新Hexo博客搭建全过程">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://www.ltzblog.top/pictures/avatar.png">
+<meta property="article:published_time" content="2024-07-07T13:11:10.724Z">
+<meta property="article:modified_time" content="2024-07-07T15:16:06.125Z">
+<meta property="article:author" content="乐天斋">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://www.ltzblog.top/pictures/avatar.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://www.ltzblog.top/2024/07/07/process/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: true,
+    post: true
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"top-center"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '博客搭建过程',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-07-07 23:16:06'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          const now = new Date()
+          const hour = now.getHours()
+          const isNight = hour <= 6 || hour >= 18
+          if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+          else if (t === 'light') activateLightMode()
+          else activateDarkMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><link rel="stylesheet" href="/css/custom.css" media="defer" onload="this.media='all'"><!-- hexo injector head_end start --><link rel="stylesheet" href="/css/runtime.css" media="print" onload="this.media='all'"><!-- hexo injector head_end end --><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/pictures/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="乐天斋的博客"><span class="site-name">乐天斋的博客</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page group" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> 列表</span><i class="fas fa-chevron-down"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 视频</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">博客搭建过程</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-07-07T13:11:10.724Z" title="发表于 2024-07-07 21:11:10">2024-07-07</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-07-07T15:16:06.125Z" title="更新于 2024-07-07 23:16:06">2024-07-07</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%B0%E5%BD%95/">记录</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-wordcount"><i class="far fa-file-word fa-fw post-meta-icon"></i><span class="post-meta-label">字数总计:</span><span class="word-count">1.2k</span><span class="post-meta-separator">|</span><i class="far fa-clock fa-fw post-meta-icon"></i><span class="post-meta-label">阅读时长:</span><span>5分钟</span></span><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="博客搭建过程"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="搭建记录"><a href="#搭建记录" class="headerlink" title="搭建记录"></a>搭建记录</h2><p>这篇文章的内容为本站的搭建过程，省略一些修改图片路径等简易操作</p>
+<h3 id="1-初始化Hexo项目"><a href="#1-初始化Hexo项目" class="headerlink" title="1.初始化Hexo项目"></a>1.初始化Hexo项目</h3><p>在新的文件夹中打开终端，输入以下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init</span><br></pre></td></tr></table></figure>
+<h3 id="2-安装初始依赖库"><a href="#2-安装初始依赖库" class="headerlink" title="2.安装初始依赖库"></a>2.安装初始依赖库</h3><p>接着输入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i</span><br></pre></td></tr></table></figure>
+<p>通过这个使博客内容可以正常显示</p>
+<h3 id="3-将博客挂载到github-pages"><a href="#3-将博客挂载到github-pages" class="headerlink" title="3.将博客挂载到github pages"></a>3.将博客挂载到github pages</h3><p>随后安装hexo-deployer-git使博客能够上传到github</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<p>（在此之后，在_config.yml中修改deploy内容，这里省略）</p>
+<h3 id="4-安装butterfly主题"><a href="#4-安装butterfly主题" class="headerlink" title="4.安装butterfly主题"></a>4.安装butterfly主题</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-theme-butterfly</span><br></pre></td></tr></table></figure>
+<p>随后安装渲染器</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br></pre></td></tr></table></figure>
+<p>在此之后将_config.yml中的theme改为butterfly<br>并且将language改为zh-CN</p>
+<h3 id="5-文章显示"><a href="#5-文章显示" class="headerlink" title="5.文章显示"></a>5.文章显示</h3><p>修改主题配置文件_config.butterfly.yml中的post_meta<br>date_type均改为both<br>date_format均改为relative</p>
+<h3 id="6-本地搜索"><a href="#6-本地搜索" class="headerlink" title="6.本地搜索"></a>6.本地搜索</h3><p>安装以下依赖</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-search --save</span><br></pre></td></tr></table></figure>
+<p>_config.yml中加入</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">search:</span><br><span class="line">  path: search.xml</span><br><span class="line">  field: post</span><br><span class="line">  content: true</span><br></pre></td></tr></table></figure>
+<p>_config.butterfly.yml中local_search的enable改为true</p>
+<h3 id="7-字数统计"><a href="#7-字数统计" class="headerlink" title="7.字数统计"></a>7.字数统计</h3><p>安装以下依赖</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-wordcount --save</span><br></pre></td></tr></table></figure>
+<p>_config.butterfly.yml中wordcount的enable改为true</p>
+<h3 id="8-鼠标点击效果"><a href="#8-鼠标点击效果" class="headerlink" title="8.鼠标点击效果"></a>8.鼠标点击效果</h3><p>_config.butterfly.yml中fireworks或者Heart symbol或者words的enable改为true</p>
+<h3 id="9-修改为一图流"><a href="#9-修改为一图流" class="headerlink" title="9.修改为一图流"></a>9.修改为一图流</h3><p>首先在source文件夹内新建css文件夹，并新建custom.css写入以下代码</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">/* 页脚与头图透明 */</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">footer &#123;</span></span><br><span class="line">  background: transparent !important;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">page-header &#123;</span></span><br><span class="line">  background: transparent !important;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 白天模式遮罩透明 */</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">footer::before &#123;</span></span><br><span class="line">  background: transparent !important;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">page-header::before &#123;</span></span><br><span class="line">  background: transparent !important;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">/* 夜间模式遮罩透明 */</span><br><span class="line">[data-theme=&quot;dark&quot;] #footer::before &#123;</span><br><span class="line">  background: transparent !important;</span><br><span class="line">&#125;</span><br><span class="line">[data-theme=&quot;dark&quot;] #page-header::before &#123;</span><br><span class="line">  background: transparent !important;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>随后在_config.butterfly.yml文件中的inject配置项的head子项加入以下代码</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">inject:</span><br><span class="line">  head:</span><br><span class="line">    - &lt;link rel=&quot;stylesheet&quot; href=&quot;/css/custom.css&quot; media=&quot;defer&quot; onload=&quot;this.media=&#x27;all&#x27;&quot;&gt;</span><br></pre></td></tr></table></figure>
+<h3 id="10-页脚徽标"><a href="#10-页脚徽标" class="headerlink" title="10.页脚徽标"></a>10.页脚徽标</h3><p>安装以下依赖</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-butterfly-footer-beautify --save</span><br></pre></td></tr></table></figure>
+<p>在站点配置文件_config.yml或者主题配置文件_config.butterfly.yml中添加（这是我的配置）</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">footer_beautify</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">页脚计时器：[Native JS Timer](https://akilar.top/posts/b941af/)</span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">页脚徽标：[Add Github Badge](https://akilar.top/posts/e87ad7f8/)</span></span><br><span class="line">footer_beautify:</span><br><span class="line">  enable:</span><br><span class="line">    timer: true # 计时器开关</span><br><span class="line">    bdage: true # 徽标开关</span><br><span class="line">  priority: 5 #过滤器优先权</span><br><span class="line">  enable_page: all # 应用页面</span><br><span class="line">  exclude: #屏蔽页面</span><br><span class="line">    # - /posts/</span><br><span class="line">    # - /about/</span><br><span class="line">  layout: # 挂载容器类型</span><br><span class="line">    type: id</span><br><span class="line">    name: footer-wrap</span><br><span class="line">    index: 0</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">计时器部分配置项</span></span><br><span class="line">  runtime_js: /js/runtime.js</span><br><span class="line">  runtime_css: /css/runtime.css</span><br><span class="line"><span class="meta prompt_">  # </span><span class="language-bash">徽标部分配置项</span></span><br><span class="line">  swiperpara: 0 #若非0，则开启轮播功能，每行徽标个数</span><br><span class="line">  bdageitem:</span><br><span class="line">    - link: https://hexo.io/ #徽标指向网站链接</span><br><span class="line">      shields: https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo #徽标API</span><br><span class="line">      message: 博客框架为Hexo #徽标提示语</span><br><span class="line">    - link: https://butterfly.js.org/</span><br><span class="line">      shields: https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender</span><br><span class="line">      message: 本站主题为Butterfly</span><br><span class="line">    - link: https://vercel.com/</span><br><span class="line">      shields: https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel</span><br><span class="line">      message: 本站采用Vercel部署</span><br><span class="line">    - link: https://github.com/</span><br><span class="line">      shields: https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub</span><br><span class="line">      message: 本站项目由Github托管</span><br><span class="line">  swiper_css: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css</span><br><span class="line">  swiper_js: https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.js</span><br><span class="line">  swiperbdage_init_js: https://npm.elemecdn.com/hexo-butterfly-footer-beautify/lib/swiperbdage_init.min.js</span><br></pre></td></tr></table></figure>
+<p>其中我的css配置为</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line">/*电子钟字体*/</span><br><span class="line">@font-face &#123;</span><br><span class="line">  font-family: &#x27;UnidreamLED&#x27;;</span><br><span class="line">  src: url(&quot;https://cdn.jsdelivr.net/npm/akilar-candyassets/fonts/UnidreamLED.ttf&quot;);</span><br><span class="line">  font-display: swap;</span><br><span class="line">&#125;</span><br><span class="line"><span class="meta prompt_">div#</span><span class="language-bash">runtime &#123;</span></span><br><span class="line">  width: 280px;</span><br><span class="line">  margin: auto;</span><br><span class="line">  color: #fff;</span><br><span class="line">  padding-inline: 5px;</span><br><span class="line">  border-radius: 10px;</span><br><span class="line">  background-color: rgba(0,0,0,0.7);</span><br><span class="line">  font-family: &#x27;UnidreamLED&#x27;;</span><br><span class="line">&#125;</span><br><span class="line">[data-theme=&quot;dark&quot;] div#runtime &#123;</span><br><span class="line">  color: #28b4c8;</span><br><span class="line">  box-shadow: 0 0 5px rgba(28,69,218,0.71);</span><br><span class="line">  animation: flashlight 1s linear infinite alternate;</span><br><span class="line">&#125;</span><br><span class="line">/*悬停显示徽标提示语*/</span><br><span class="line">a.github-badge:hover:before &#123;</span><br><span class="line">  position: fixed;</span><br><span class="line">  width: fit-content;</span><br><span class="line">  margin: auto;</span><br><span class="line">  left: 0;</span><br><span class="line">  right: 0;</span><br><span class="line">  top: 10%;</span><br><span class="line">  border-radius: 10px;</span><br><span class="line">  text-align: center;</span><br><span class="line">  z-index: 100;</span><br><span class="line">  content: attr(data-title);</span><br><span class="line">  font-size: 20px;</span><br><span class="line">  color: #fff;</span><br><span class="line">  padding: 10px;</span><br><span class="line">  background-color: var(--text-bg-hover);</span><br><span class="line">&#125;</span><br><span class="line">[data-theme=dark] a.github-badge:hover:before &#123;</span><br><span class="line">  background-color: rgba(18,18,18,0.8);</span><br><span class="line">&#125;</span><br><span class="line">@-moz-keyframes flashlight &#123;</span><br><span class="line">  from &#123;</span><br><span class="line">    box-shadow: 0 0 5px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">  to &#123;</span><br><span class="line">    box-shadow: 0 0 2px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@-webkit-keyframes flashlight &#123;</span><br><span class="line">  from &#123;</span><br><span class="line">    box-shadow: 0 0 5px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">  to &#123;</span><br><span class="line">    box-shadow: 0 0 2px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@-o-keyframes flashlight &#123;</span><br><span class="line">  from &#123;</span><br><span class="line">    box-shadow: 0 0 5px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">  to &#123;</span><br><span class="line">    box-shadow: 0 0 2px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">@keyframes flashlight &#123;</span><br><span class="line">  from &#123;</span><br><span class="line">    box-shadow: 0 0 5px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">  to &#123;</span><br><span class="line">    box-shadow: 0 0 2px #1478d2;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>我的js配置为</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">setInterval(() =&gt; &#123;</span><br><span class="line">    let create_time = Math.round(new Date(&#x27;2024-07-06 22:00:00&#x27;).getTime() / 1000); //在此行修改建站时间</span><br><span class="line">    let timestamp = Math.round((new Date().getTime()) / 1000);</span><br><span class="line">    let second = timestamp - create_time;</span><br><span class="line">    let time = new Array(0, 0, 0, 0, 0);</span><br><span class="line"></span><br><span class="line">    var nol = function(h)&#123;</span><br><span class="line">      return h&gt;9?h:&#x27;0&#x27;+h;</span><br><span class="line">    &#125;</span><br><span class="line">    if (second &gt;= 24 * 3600) &#123;</span><br><span class="line">      time[1] = parseInt(second / (24 * 3600));</span><br><span class="line">      second %= 24 * 3600;</span><br><span class="line">    &#125;</span><br><span class="line">    if (second &gt;= 3600) &#123;</span><br><span class="line">      time[2] = nol(parseInt(second / 3600));</span><br><span class="line">      second %= 3600;</span><br><span class="line">    &#125;</span><br><span class="line">    if (second &gt;= 60) &#123;</span><br><span class="line">      time[3] = nol(parseInt(second / 60));</span><br><span class="line">      second %= 60;</span><br><span class="line">    &#125;</span><br><span class="line">    if (second &gt; 0) &#123;</span><br><span class="line">      time[4] = nol(second);</span><br><span class="line">    &#125;</span><br><span class="line">     currentTimeHtml =&quot;&lt;div id=&#x27;runtime&#x27;&gt;&quot; + &#x27;本站距今已运行了 &#x27; + time[1] + &#x27; 天 &#x27; + time[2] + &#x27; 时 &#x27; + time[3] + &#x27; 分 &#x27; + time[4] + &#x27; 秒&#x27; + &#x27;&lt;/div&gt;&#x27;;</span><br><span class="line">    document.getElementById(&quot;workboard&quot;).innerHTML = currentTimeHtml;</span><br><span class="line">  &#125;, 1000);</span><br></pre></td></tr></table></figure>
+<h3 id="11"><a href="#11" class="headerlink" title="11."></a>11.</h3></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://www.ltzblog.top">乐天斋</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://www.ltzblog.top/2024/07/07/process/">https://www.ltzblog.top/2024/07/07/process/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://www.ltzblog.top" target="_blank">乐天斋的博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="/pictures/avatar.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/07/07/sqlite/" title="SQLite 笔记"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.sqlite.org/images/sqlite370_banner.gif" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">SQLite 笔记</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="/pictures/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">乐天斋</div><div class="author-info__description">吾生梦幻间,何事绁尘羁</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/LTZAD"><i class="fab fa-github"></i><span>前往我的github</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客！</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95"><span class="toc-text">搭建记录</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%88%9D%E5%A7%8B%E5%8C%96Hexo%E9%A1%B9%E7%9B%AE"><span class="toc-text">1.初始化Hexo项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85%E5%88%9D%E5%A7%8B%E4%BE%9D%E8%B5%96%E5%BA%93"><span class="toc-text">2.安装初始依赖库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%B0%86%E5%8D%9A%E5%AE%A2%E6%8C%82%E8%BD%BD%E5%88%B0github-pages"><span class="toc-text">3.将博客挂载到github pages</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%AE%89%E8%A3%85butterfly%E4%B8%BB%E9%A2%98"><span class="toc-text">4.安装butterfly主题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%96%87%E7%AB%A0%E6%98%BE%E7%A4%BA"><span class="toc-text">5.文章显示</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%9C%AC%E5%9C%B0%E6%90%9C%E7%B4%A2"><span class="toc-text">6.本地搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E5%AD%97%E6%95%B0%E7%BB%9F%E8%AE%A1"><span class="toc-text">7.字数统计</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E6%95%88%E6%9E%9C"><span class="toc-text">8.鼠标点击效果</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E4%BF%AE%E6%94%B9%E4%B8%BA%E4%B8%80%E5%9B%BE%E6%B5%81"><span class="toc-text">9.修改为一图流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E9%A1%B5%E8%84%9A%E5%BE%BD%E6%A0%87"><span class="toc-text">10.页脚徽标</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11"><span class="toc-text">11.</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/07/process/" title="博客搭建过程">博客搭建过程</a><time datetime="2024-07-07T13:11:10.724Z" title="发表于 2024-07-07 21:11:10">2024-07-07</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2024/07/07/sqlite/" title="SQLite 笔记"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.sqlite.org/images/sqlite370_banner.gif" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="SQLite 笔记"/></a><div class="content"><a class="title" href="/2024/07/07/sqlite/" title="SQLite 笔记">SQLite 笔记</a><time datetime="2024-07-07T11:42:40.361Z" title="发表于 2024-07-07 19:42:40">2024-07-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/07/record/" title="Hexo博客网站更新记录">Hexo博客网站更新记录</a><time datetime="2024-07-07T11:40:28.420Z" title="发表于 2024-07-07 19:40:28">2024-07-07</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2024 By 乐天斋</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.8/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><script>function panguFn () {
+  if (typeof pangu === 'object') pangu.autoSpacingPage()
+  else {
+    getScript('https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js')
+      .then(() => {
+        pangu.autoSpacingPage()
+      })
+  }
+}
+
+function panguInit () {
+  if (false){
+    GLOBAL_CONFIG_SITE.isPost && panguFn()
+  } else {
+    panguFn()
+  }
+}
+
+document.addEventListener('DOMContentLoaded', panguInit)</script><div class="js-pjax"></div><script id="canvas_nest" defer="defer" color="0,0,255" opacity="0.7" zIndex="-1" count="50" mobile="false" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-nest.min.js"></script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/click-heart.min.js" async="async" mobile="false"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/metingjs/dist/Meting.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.13.0"></script></div></div><!-- hexo injector body_end start --><script data-pjax>
+  function butterfly_footer_beautify_injector_config(){
+    var parent_div_git = document.getElementById('footer-wrap');
+    var item_html = '<div id="workboard"></div><p id="ghbdages"><a class="github-badge" target="_blank" href="https://hexo.io/" style="margin-inline:5px" data-title="博客框架为Hexo" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Frame-Hexo-blue?style=flat&amp;logo=hexo" alt=""/></a><a class="github-badge" target="_blank" href="https://butterfly.js.org/" style="margin-inline:5px" data-title="本站主题为Butterfly" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Theme-Butterfly-6513df?style=flat&amp;logo=bitdefender" alt=""/></a><a class="github-badge" target="_blank" href="https://vercel.com/" style="margin-inline:5px" data-title="本站采用Vercel部署" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Hosted-Vercel-brightgreen?style=flat&amp;logo=Vercel" alt=""/></a><a class="github-badge" target="_blank" href="https://github.com/" style="margin-inline:5px" data-title="本站项目由Github托管" title=""><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://img.shields.io/badge/Source-Github-d021d6?style=flat&amp;logo=GitHub" alt=""/></a></p>';
+    console.log('已挂载butterfly_footer_beautify')
+    parent_div_git.insertAdjacentHTML("beforeend",item_html)
+    }
+  var elist = 'null'.split(',');
+  var cpage = location.pathname;
+  var epage = 'all';
+  var flag = 0;
+
+  for (var i=0;i<elist.length;i++){
+    if (cpage.includes(elist[i])){
+      flag++;
+    }
+  }
+
+  if ((epage ==='all')&&(flag == 0)){
+    butterfly_footer_beautify_injector_config();
+  }
+  else if (epage === cpage){
+    butterfly_footer_beautify_injector_config();
+  }
+  </script><script async src="/js/runtime.js"></script><!-- hexo injector body_end end --></body></html>
