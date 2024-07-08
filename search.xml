@@ -23,25 +23,6 @@
     
     
     <entry>
-      <title>Hexo博客网站更新记录</title>
-      <link href="/2024/07/07/record/"/>
-      <url>/2024/07/07/record/</url>
-      
-        <content type="html"><![CDATA[<h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><h3 id="2024年7月7日"><a href="#2024年7月7日" class="headerlink" title="2024年7月7日"></a>2024年7月7日</h3><p>（今日因旧代码报错而不得不放弃，从头开始，有点崩溃，因此开始记录并且做好备份，以便后续出问题更改）<br>1.配置了一下butterfly主题的基础，比如设置网页背景，侧边栏头像，以及博客封面之类<br>2.随后更新了本地搜索，开启字数统计，打开背景特效，打开通知弹窗<br>3.更新了鼠标点击特效(完蛋，这会又报错了，还好有之前的备份，但还是少了十几分钟的工程)<br>4.更新了网页为一图流，且增加页脚徽标<br>5.更改字体成功，网页中字体为Aa楷体，代码字体为Consolas<br>（累了，明天再说，绝区零启动！）</p><h3 id="2024年7月8日"><a href="#2024年7月8日" class="headerlink" title="2024年7月8日"></a>2024年7月8日</h3><p>1.更新文章置顶滚动栏</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 记录 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>SQLite 笔记</title>
       <link href="/2024/07/07/sqlite/"/>
       <url>/2024/07/07/sqlite/</url>
@@ -52,6 +33,25 @@
       <categories>
           
           <category> SQLite </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo博客网站更新记录</title>
+      <link href="/2024/07/07/record/"/>
+      <url>/2024/07/07/record/</url>
+      
+        <content type="html"><![CDATA[<h2 id="更新记录"><a href="#更新记录" class="headerlink" title="更新记录"></a>更新记录</h2><h3 id="2024年7月7日"><a href="#2024年7月7日" class="headerlink" title="2024年7月7日"></a>2024年7月7日</h3><p>（今日因旧代码报错而不得不放弃，从头开始，有点崩溃，因此开始记录并且做好备份，以便后续出问题更改）<br>1.配置了一下butterfly主题的基础，比如设置网页背景，侧边栏头像，以及博客封面之类<br>2.随后更新了本地搜索，开启字数统计，打开背景特效，打开通知弹窗<br>3.更新了鼠标点击特效(完蛋，这会又报错了，还好有之前的备份，但还是少了十几分钟的工程)<br>4.更新了网页为一图流，且增加页脚徽标<br>5.更改字体成功，网页中字体为Aa楷体，代码字体为Consolas<br>（累了，明天再说，绝区零启动！）</p><h3 id="2024年7月8日"><a href="#2024年7月8日" class="headerlink" title="2024年7月8日"></a>2024年7月8日</h3><p>1.更新文章置顶滚动栏</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 记录 </category>
           
       </categories>
       
